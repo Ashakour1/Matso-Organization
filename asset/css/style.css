@@ -1,94 +1,85 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.container{
-    
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    overflow: hidden;
-    padding: 0 5%;
-    position: relative;
-    
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  padding: 0 5%;
+  position: relative;
 }
-.logo{
-    width: 110px;
-    padding: 20px 0px;
-    font-size: 22px;
-    align-items: center;
-    cursor: pointer;
-
+.logo {
+  width: 110px;
+  padding: 20px 0px;
+  font-size: 22px;
+  align-items: center;
+  cursor: pointer;
 }
 
-.content{
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-    color: #f7941d;
+.content {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #f7941d;
 }
-.content p{
-    font-size: 22px;
+.content p {
+  font-size: 22px;
 }
-.content h1{
-    font-size: 64px;
-    font-weight: 500;
-
+.content h1 {
+  font-size: 64px;
+  font-weight: 500;
 }
-.content h1 span{
-    color: #2e3192;
-}
-
-.content button{
-    background: transparent;
-    border: 2px solid #2e3192;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: #f7941d;
-}
-.launch{
-    display: flex;
-
-}
-.launch div{
-    flex-basis: 100px;
-    margin-bottom: 10px;
-}
-.launch div p{
-    font-size: 60px;
-    margin-bottom: -14px;
+.content h1 span {
+  color: #2e3192;
 }
 
-.rocket{
-    width: 20%;
-    position: absolute;
-    right: 10%;
+.content button {
+  background: transparent;
+  border: 2px solid #2e3192;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #f7941d;
+}
+.launch {
+  display: flex;
+}
+.launch div {
+  flex-basis: 100px;
+  margin-bottom: 10px;
+}
+.launch div p {
+  font-size: 60px;
+  margin-bottom: -14px;
+}
+
+.rocket {
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
     bottom: 0;
-    animation: rocket 4s linear infinite;
-}
-
-@keyframes rocket{
-    0%{
-        bottom: 0;
-        opacity: 0;
-    }
-    100%{
-        bottom: 105%;
-        opacity: 0.5;
-    }
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 0.5;
+  }
 }
 
 @media screen and(max-width : 600px) {
-
-    .container{
-        width: 600px;
-    }
-    
+  .container {
+    width: 600px;
+  }
 }
