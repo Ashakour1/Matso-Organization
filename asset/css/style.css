@@ -11,8 +11,8 @@
   background-color: rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
-  padding: 0 5%;
-  position: relative;
+  
+  text-align: center;
 }
 .logo {
   width: 110px;
@@ -24,12 +24,15 @@
 
 .content {
   top: 50%;
+  margin: auto;
+  align-items: center;
   position: absolute;
   transform: translateY(-50%);
   color: #f7941d;
 }
 .content p {
   font-size: 22px;
+  
 }
 .content h1 {
   font-size: 64px;
@@ -49,6 +52,7 @@
 }
 .launch {
   display: flex;
+  justify-content: center;
 }
 .launch div {
   flex-basis: 100px;
