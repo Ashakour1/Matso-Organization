@@ -12,23 +12,24 @@
   position: relative;
   overflow: hidden;
   padding: 0 5%;
-  
+  justify-content: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .logo {
   width: 110px;
   padding: 20px 0px;
   font-size: 22px;
-  align-items: center;
   cursor: pointer;
 }
 
 .content {
-  top: 50%;
+  top: 40%;
   margin: auto;
-  align-items: center;
   position: absolute;
-  transform: translateY(-50%);
   color: #f7941d;
+  
 }
 .content p {
   font-size: 22px;
